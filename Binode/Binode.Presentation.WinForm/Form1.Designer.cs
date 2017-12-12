@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.grpKategori = new System.Windows.Forms.GroupBox();
-            this.grpIcerik = new System.Windows.Forms.GroupBox();
             this.treeKategori = new System.Windows.Forms.TreeView();
+            this.grpIcerik = new System.Windows.Forms.GroupBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.grpKategori.SuspendLayout();
             this.grpIcerik.SuspendLayout();
@@ -46,6 +46,14 @@
             this.grpKategori.TabStop = false;
             this.grpKategori.Text = "Kategori";
             // 
+            // treeKategori
+            // 
+            this.treeKategori.Location = new System.Drawing.Point(6, 19);
+            this.treeKategori.Name = "treeKategori";
+            this.treeKategori.Size = new System.Drawing.Size(188, 405);
+            this.treeKategori.TabIndex = 0;
+            this.treeKategori.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeKategori_AfterSelect);
+            // 
             // grpIcerik
             // 
             this.grpIcerik.Controls.Add(this.listView1);
@@ -55,13 +63,6 @@
             this.grpIcerik.TabIndex = 1;
             this.grpIcerik.TabStop = false;
             this.grpIcerik.Text = "İçerik";
-            // 
-            // treeKategori
-            // 
-            this.treeKategori.Location = new System.Drawing.Point(6, 19);
-            this.treeKategori.Name = "treeKategori";
-            this.treeKategori.Size = new System.Drawing.Size(188, 405);
-            this.treeKategori.TabIndex = 0;
             // 
             // listView1
             // 

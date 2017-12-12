@@ -52,9 +52,17 @@ namespace Binode.Presentation.WinForm
                     {
                         KategoriyiTreeviewAEkle(kategori.AltKategori, node.Nodes[node.Nodes.Count-1]);
                     }
+                   
                 }
             }
 
+        }
+       
+            private void treeKategori_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+            listView1.Items.Clear();
+            
         }
     }
 }
